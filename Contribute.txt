@@ -1,0 +1,8 @@
+# In file classification_Comparison.py in folder Classification_Comparison. 
+
+# When creating dependent and independent variables, we should not include ID column and Purchase column in X. ID does not help ML Algorithm because it is just number to identitfy user. 
+
+# Purchase is the one ML predict, so it only should be in y, not X. 
+
+    X = dataset.iloc[:, [2, 3]].values
+    y = dataset.iloc[:, 4].values
